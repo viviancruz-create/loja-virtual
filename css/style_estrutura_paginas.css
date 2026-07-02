@@ -11,8 +11,9 @@
 :root{
     --cor_principal:#acfcf8;
     --cor_botao01:#fcf6c7;
-     --cor_lnk_menu:#f6f7b6;
+     --cor_lnk_menu:#fa9bd5;
      --cor_botao_cor_vermelha:#f00d0d;
+     --cor_suave:#ffbcde;
 }
 
 #geral{
@@ -27,15 +28,15 @@
     width: 100%;
     height: 200px;
     background-color: var(--cor_principal);
-    padding: 5px;
+    padding: 5px 25px;
     margin: 20px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 #logo img{
-    width: 250px;
-    height: 160px;
+    width: 300px;
+    height: 170px;
 }
 
 #menu{
@@ -104,4 +105,72 @@
     padding: 20px;
     border-radius: 8px;
     font-size: 2em;
+    background-color: var(--cor_lnk_menu);
 }
+#cards{
+    width: 1000px;
+    min-height: 600px;
+    margin: 20px 0px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,mimax(250px,ifr));
+    gap: 20px;
+    cursor: pointer;
+}
+
+.card{
+    width: 250px;
+    min-height: 250px;
+    border: solid 1px var(--cor_principal);
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.card h2{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin:10px 0px;
+}
+
+.card h3{
+    margin: 20px;
+}
+.card button{
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+.card img{
+    width: 100%;
+    height: 150px;
+
+}
+
+#rodape{
+    width: 100%;
+    height:250px ;
+    background-color: var(--cor_suave);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#dadosloja{
+    font-size: 0.8em;
+
+}
+#icones-sociais ul{
+    list-style: none;
+    
+}
+#icones-sociais img{
+    width: 250;
+}
+
