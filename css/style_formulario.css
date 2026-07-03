@@ -58,4 +58,6 @@ label{
     letter-spacing: 5px;
 }
 
-.oculto{}
+.oculto{
+    display: none;
+}
