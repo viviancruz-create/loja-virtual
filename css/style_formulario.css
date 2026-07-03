@@ -51,5 +51,9 @@ label{
     height: 40px;
     margin-left: 20px;
     background-color: var(--cor_suave);
-    boder
+    border:none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 0.8em;
+    letter-spacing: 5px;
 }
