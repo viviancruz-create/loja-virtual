@@ -1,0 +1,30 @@
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+body{
+    background-color:var(--cor_suave) ;
+}   
+
+header{
+    background-color: var(--cor_principal);
+    color: var(--cor_suave);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px;
+}
+header h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+
+}
+.conteudo-historia{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
