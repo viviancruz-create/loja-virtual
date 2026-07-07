@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f39ee8; /* Fundo bege claro do modelo */
+    color: #9df5f8;
+    line-height: 1.5;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffb4f5; /* Verde escuro */
+    color: #96f8f8;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #d97706;
+}
+
+header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #153416;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+}
+
+nav a:hover {
+    color: #d97706;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Título Laranja da Página (Carrinho de Compras) */
+.page-title {
+    background-color: #d97706; /* Laranja do modelo */
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+/* Layout em Duas Colunas (Utilizando display table para compatibilidade perfeita) */
+.main-layout {
+    display: table;
+    width: 100%;
+}
+
+.products-column {
+    display: table-cell;
+    width: 65%;
+    padding-right: 25px;
+    vertical-align: top;
+}
+
+/* Coluna Direita: Caixa de Checkout e Totais */
+.checkout-column {
+    display: table-cell;
+    width: 35%;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+    vertical-align: top;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Cards Individuais de Produto */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: table;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.prod-img-cell {
+    display: table-cell;
+    width: 75px;
+    vertical-align: middle;
+}
+
+/* Caixa Placeholder para a foto do bolo */
+.prod-img-box {
+    width: 65px;
+    height: 65px;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 26px;
+}
+
+.prod-details-cell {
+    display: table-cell;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.prod-name {
+    font-weight: bold;
+    color: #1e4620;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.prod-price {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.prod-quantity-cell {
+    display: table-cell;
+    width: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.quantity-control {
+    border: 1px solid #d1d5db;
+    padding: 5px;
+    border-radius: 4px;
+    width: 55px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Subtotal de cada item */
+.prod-subtotal-cell {
+    display: table-cell;
+    width: 100px;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: bold;
+    color: #333333;
+    font-size: 15px;
+}
+
+/* Formulário do CEP */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4b5563;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Linhas de Resumo de Valores */
+.summary-row {
+    display: table;
+    width: 100%;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed #e5e7eb;
+}
+
+.summary-label {
+    display: table-cell;
+    font-size: 12px;
+    font-weight: bold;
+    color: #4b5563;
+    text-transform: uppercase;
+}
+
+.summary-value {
+    display: table-cell;
+    text-align: right;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* Caixa com o Total a Pagar */
+.summary-row.total {
+    border-bottom: none;
+    background-color: #f3f4f6;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.summary-row.total .summary-label {
+    color: #1e4620;
+    font-size: 13px;
+}
+
+.summary-row.total .summary-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e4620;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-continue {
+    background-color: #1e4620; /* Verde */
+    color: white;
+}
+
+.btn-finish {
+    background-color: #ffffff;
+    color: #1e4620;
+    border: 2px solid #1e4620;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 50px;
+    background-color: #1e4620;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+    border-top: 4px solid #d97706;
+}
