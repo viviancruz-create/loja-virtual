@@ -40,3 +40,58 @@ const listarProdutos = () => {
 };
 
 listarProdutos();
+
+//Filtrando As Seções Com A Coleção map
+const listarsecoes = ()=>{
+  //criando a coleção de MAP 
+  const secoesFiltrada =new Map()
+
+produtosCandyShop.forEach((elem, i)=>{
+
+//Criando a chave 
+  secoesFiltrada.set(elem.id_secao, elem)
+})
+
+//Convertendo o MAP em Array
+const secoesMenu = Array.from(secoesFiltrada.values())
+
+//Retornando o Array Convertido
+return secoesMenu
+}
+
+//Montando os links Seções
+const montarSecoes = ()=>{
+  //Pegando o elemento do Dom
+  const ulMenu = document.querySelector('#menu-secoes')
+
+  //limpando o elemento
+ulMenu.innerHTML = ''
+
+//Percorrendo o Array das seções filtrada
+  listarsecoes().forEach((elem, i) => {
+    
+    //criando o elemento li
+    const lisecao = document.createElement('li')
+
+    //criando o elemento a
+    const aSecao = document.createElement('li')
+    aSecao.setAttribute('class', 'lnk-secao')
+    aSecao.innerHTML = elem.nome_secao
+
+    //Capturando o click dos links
+    aSecao.addEventListener('click',()=>{
+      //Para teste
+      console.log(elem.id_secao)
+      })
+
+      //Adicionando o elemento filho a no elemento li
+      lisecao.appendChild(aSecao)
+
+      //Adicionando o elemento filho li no elemento do Dom ul
+      ulMenu.appendChild(lisecao)
+
+    })
+  
+}
+
+montarSecoes()
