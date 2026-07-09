@@ -173,4 +173,32 @@
 #icones-sociais img{
     width: 250;
 }
+#nav-secoes{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--cor_lnk_menu);
+
+}
+#nav-secoes:hover{
+    font-size: 1.6em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:var(--cor_botao01)
+    
+}
+#nav-secoes{
+    background-color: #f9fdc2;
+    width: 600px;
+    height: 160px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#cabecalho li {
+    display:flex;
+    list-style: none;
+    gap:20px
+}
 
