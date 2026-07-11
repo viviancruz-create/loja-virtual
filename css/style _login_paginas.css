@@ -99,7 +99,7 @@
         }
 
         .btn-login:active {
-            background-color: var(--cor_botao_cor_vermelha);
+            background-color:pink;
             color: #fff;
         }
 
@@ -122,5 +122,5 @@
 
         }
 
-
+        
 
