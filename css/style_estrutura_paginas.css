@@ -162,7 +162,7 @@ ul {
     text-align: center;
     box-shadow: 0 10px 20px rgba(74, 52, 41, 0.05);
     border: 1px solid #fcf0ec;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -170,5 +170,26 @@ ul {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(255, 123, 147, 0.15)
+    box-shadow: 0 20px 15px rgba(255, 123, 147, 0.5)
+}
+
+.btn_card{
+    background-color: #fcf8f2;
+    border-radius: 15px;
+}
+
+.btn_card:hover{
+    background-color: #ff7b93;
+    transform: translateY(-2px);
+
+}
+
+.tito_card{
+    font-size: 1.5em;
+    margin-bottom: 0px;
+
+}
+
+.valor_card{
+    margin: 0px;
 }
