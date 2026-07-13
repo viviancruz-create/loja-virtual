@@ -1,4 +1,28 @@
 /* ==========================================================================
+   VARIÁVEIS GERAIS (TEMAS E CORES)
+   ========================================================================== */
+   :root {
+    /* Cores Principais */
+    --cor-fundo: #fcf8f2;          /* Creme suave */
+    --cor-texto: #4a3429;          /* Marrom escuro (chocolate) */
+    --cor-texto-rgb: 74, 52, 41;   /* Usado para sombras do texto/cards */
+    
+    --cor-primaria: #ff7b93;       /* Rosa chiclete */
+    --cor-primaria-rgb: 255, 123, 147; /* Usado para brilhos e sombras rosa */
+    
+    --cor-secundaria: #6b473c;     /* Marrom médio (links) */
+    --cor-branco: #ffffff;
+
+    /* Tons de Bordas e Destaques Suaves */
+    --cor-borda-suave: #f5c3c2;    /* Rosa claro para bordas e tracejados */
+    --cor-borda-card: #fcf0ec;     /* Borda sutil dos cartões */
+    --cor-hover-suave: #ffeef1;    /* Fundo de hover bem clarinho */
+
+    /* Fontes */
+    --fonte-principal: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+/* ==========================================================================
    CONFIGURAÇÕES GERAIS E RESETAÇÃO
    ========================================================================== */
    * {
