@@ -1,3 +1,4 @@
+@import url(style_estrutura_paginas.css);
 
 *{
     margin: 0px;
@@ -25,7 +26,8 @@ header h2{
 }
 .conteudo-historia{
     max-width: 1000px;
-    margin: 40px auto;
+    margin: 100px auto;
     padding: 0 20px;
+    background-color: var(--cor-borda-suave);
 }
 

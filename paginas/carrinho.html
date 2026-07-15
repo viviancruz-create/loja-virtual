@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
 
     <link rel="shortcut icon" href="../imagem/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style_carrinho_paginas.css">
+    <script type="module" src="../js/monta_tela_carrinho.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -15,16 +18,17 @@
     </header>
 
     <nav>
-        <a href="../index.html">Loja</a> | <a href="../paginas/sobre.html">Quem Somos</a>  | <a href="../paginas/cadastro.html">Cadastro</a> | <a href="../paginas/login.html">Login</a>
+        <a href="../index.html">Loja</a> | <a href="../paginas/sobre.html">Quem Somos</a> | <a
+            href="../paginas/cadastro.html">Cadastro</a> | <a href="../paginas/login.html">Login</a>
     </nav>
 
     <div class="container">
         <div class="page-title">Carrinho de Compras</div>
 
         <div class="main-layout">
-            
+
             <div class="products-column">
-                
+
                 <div class="product-card">
                     <div class="prod-img-cell">
                         <div class="prod-img-box">🍰</div>
@@ -60,46 +64,44 @@
                     </div>
                     <div class="prod-details-cell">
                         <div class="prod-name">Fatia de Bolo de Casamento Real</div>
-
+    
                         <div id="fatia-de-bolo"></div>
                     </div>
                     <div class="prod-quantity-cell">
                         <input type="number" class="quantity-control" value="1">
                     </div>
                 </div>
+            </div>
 
-                <form id="CEP">
+            <form id="CEP">
 
                 <div class="checkout-column">
                     <div class="form-group">
                         <label for="cep">CEP</label>
                         <input type="text" id="cep" class="form-control" placeholder="Ex: 49000-000">
                     </div>
-    
+
                     <div class="summary-row">
                         <div class="summary-label">Valor Total</div>
                         <div id="valor-total"></div>
                     </div>
-    
+
                     <div class="summary-row">
                         <div class="summary-label">Valor Frete</div>
                         <div id="valor-frete"></div>
                     </div>
-    
+
                     <div class="summary-row total">
                         <div class="summary-label">Total a Pagar</div>
                         <div id="total-a-pagar"></div>
                     </div>
-    
+
                     <a href="#" class="btn btn-continue">Continuar Compras</a>
                     <a href="#" class="btn btn-finish">Finalizar Compra</a>
                 </div>
 
-                </form>
+        </div>
 
-                </div>
-
-            </div>
-    
 </body>
+
 </html>

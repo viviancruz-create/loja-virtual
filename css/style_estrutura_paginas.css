@@ -65,7 +65,7 @@ ul {
     border-bottom: 2px dashed #f5c3c2;
 }
 
-#logo img, #div-cartoes img {
+#logo img {
     max-height: 80px;
     width: auto;
     transition: transform 0.5s ease;
@@ -217,3 +217,44 @@ ul {
 .valor_card{
     margin: 0px;
 }
+
+
+/* ==========================================================================
+   Rodapé (footer)
+   ========================================================================== */
+
+
+   #rodape{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    display: flex;
+
+   }
+   
+
+
+   #icones-sociais ul {
+    display: flex;
+    gap: 15px;
+   }
+
+   #icones-sociais img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+   }
+
+   #div-cartoes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+   }
+
+   #div-cartoes img {
+    height: 100px;
+    width: auto;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+   }
