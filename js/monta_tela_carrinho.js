@@ -22,15 +22,18 @@ const montaTelaCarrinho = () => {
         imgRemover.setAttribute('class', 'img-remover')
         
         imgRemover.addEventListener('click',()=>{
-            alert(i)
+         if (confirm(`deseja remover ${elem.descricao_produto} da sua lista?`)){
+            removerItemCarrinho(i)
+         }
+            
         })
     
         sectionItem.appendChild(imgRemover)
         sectionItensCarrinho.appendChild(sectionItem)
     });
 }
-    const removeItemCarrinho = (pos)=>{
-        removeItem(pos)
+    const removerItemCarrinho = (pos)=>{
+        removerItem(pos)
 
         montaTelaCarrinho()
     
