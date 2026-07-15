@@ -21,4 +21,12 @@ const listItens = () => {
     return ItensSelecionados
 }
 
+//Remover elemento
+const removeItem = (pos)=>{
+    ItensCarrinho.splice(pos, 1)
+
+    localStorage.setItem('itensSessao', JSON.stringify(ItensCarrinho))
+    //sessionsStorage.setItem('itensSessao', JSON.stringfy(itensCarrinho))
+}
+
 export { addItem, listItens }

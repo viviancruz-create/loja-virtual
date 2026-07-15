@@ -29,4 +29,10 @@ const montaTelaCarrinho = () => {
         sectionItensCarrinho.appendChild(sectionItem)
     });
 }
+    const removeItemCarrinho = (pos)=>{
+        removeItem(pos)
+
+        montaTelaCarrinho()
+    
+}
 montaTelaCarrinho()
