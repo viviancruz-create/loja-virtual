@@ -9,69 +9,126 @@
     <link rel="shortcut icon" href="../imagem/logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../css/style_carrinho_paginas.css">
     <script type="module" src="../js/monta_tela_carrinho.js" defer></script>
-    <script type="module" src="../js/produtos.js" defer></script>
 </head>
 
 <body>
-
-    <header>
-        <h1>VS Cake Delícia</h1>
-    </header>
-
-    <nav>
-        <a href="../index.html">Loja</a> | <a href="../paginas/sobre.html">Quem Somos</a> | <a
-            href="../paginas/cadastro.html">Cadastro</a> | <a href="../paginas/login.html">Login</a>
-    </nav>
-
-    <div class="container">
-        <div class="page-title">Carrinho de Compras</div>
-
-        
-
-        <div class="main-layout">
-
-            <div class="card">
-                <img src="imagem/donuts.jpg" alt="donuts" class="img_card">
-                <h2 class="tito_card">Donuts</h2>
-                <h3 class="valor_card">R$8,00</h3>
-                <input type="number">
+    <main id="geral">
+        <header id="cabecalho">
+            <div id="logo">
+                <a href="../index.html">
+                    <img src="../imagem/logo.jpeg" alt="logo">
+                </a>
             </div>
 
-            
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html" class="lnk_menu"> Home </a></li>
+                    <li><a href="../paginas/cadastro.html" class="lnk_menu"> Cadastro </a></li>
+                    <li><a href="../paginas/sobre.html" class="lnk_menu">Sobre</a></li>
+                </ul>
+            </nav>
 
-           
-            <div class="products-column">
+            <div id="div-icones">
+                <ul>
+                    <li><a href="login.html" class="lnk_icone"><img src="../imagem/logo.jpeg" alt=""></a>
+                    </li>
+                    <li><a href="carrinho.html" class="lnk_icone"><img src="../imagem/carrinho.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
+        </header>
 
-            <form id="CEP">
+        <section id="pesquisa">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder="Digite seu produto">
+        </section>
 
-                <div class="checkout-column">
-                    <div class="form-group">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" class="form-control" placeholder="Ex: 49000-000">
-                    </div>
+        <section id="carrinho">
+            <section id="itens-carrinho">
+                <section class="item">
+                    <img src="../assets/images/bolos/brigadeiro-gourmet.jpg" alt="Bolo de Brigadeiro Gourmet Belga" class="img-item">
+                    <p class="descricao"> Bolo de Brigadeiro Gourmet Belga</p>
+                    <p class="valor-unitario">89.90 unid</p>
+                    <input type="number" name="quant01" id="quant01" class="input-item" value="1">
+                    <p class="tot-item">R$ 89,90</p>
+                    <img src="../imagem/remover.png" alt="" class="img-remover">
+                </section>
 
-                    <div class="summary-row">
-                        <div class="summary-label">Valor Total</div>
-                        <div id="valor-total"></div>
-                    </div>
+                <section class="item">
+                    <img src="../assets/images/bolos/red-velvet.jpg" alt="Bolo Red Velvet com Frutas Vermelhas" class="img-item">
+                    <p class="descricao"> Donuts</p>
+                    <p class="vlr-unitario">R$ 95.00 uni</p>
+                    <input type="number" nome="quant01" id="quant01" class="input-item" value="1">
+                    <p class="tot-item">R$ 8,00</p>
+                    <img src="../imagem/remover.png" alt="" class="img-remover">
+                </section>
 
-                    <div class="summary-row">
-                        <div class="summary-label">Valor Frete</div>
-                        <div id="valor-frete"></div>
-                    </div>
+                <section class="item">
+                    <img src="imagem/donuts.jpg" alt="Donuts" class="img-item">
+                    <p class="descricao">Donuts</p>
+                    <p class="vlr-unitario">R$ 8.00 uni</p>
+                    <input type="number" nome="quant01" id="quant01" class="input-item" value="1">
+                    <p class="tot-item">R$ 8,00</p>
+                    <img src="../imagem/remover.png" alt="" class="img-remover">
+                </section>
 
-                    <div class="summary-row total">
-                        <div class="summary-label">Total a Pagar</div>
-                        <div id="total-a-pagar"></div>
-                    </div>
+                <section class="item">
+                    <img src="imagem/donuts.jpg" alt="Donuts" class="img-item">
+                    <p class="descricao"> Donuts</p>
+                    <p class="vlr-unitario">R$ 8.00 uni</p>
+                    <input type="number" nome="quant01" id="quant01" class="input-item" value="1">
+                    <p class="tot-item">R$ 8,00</p>
+                    <img src="../imagem/remover.png" alt="" class="img-remover">
+                </section>
 
-                    <a href="#" class="btn btn-continue">Continuar Compras</a>
-                    <a href="#" class="btn btn-finish">Finalizar Compra</a>
+                
+            </section>
+
+            <div id="valores-carrinho">
+                <div id="div-cep">
+                    <h2 class="titulo-valores-carrinho">CEP</h2>
+                    <div id="input-cep"><input type="text" name="input-cep" id="input-cep" class="input-cep"></div>
                 </div>
 
-        </div>
+                <div id="div-calc-valor">
+                    <h2 class="titulo-valores-carrinho">Valor Total</h2>
+                    <p id="valor-total" class="valor">R$ 150,00</p>
+
+                    <h2 class="titulo-valores-carrinho">Valor Frete</h2>
+                    <p id="valor-total" class="valor">R$ 15,00</p>
+                </div>
+
+                <div id="div-calc-valor-pagar">
+                    <h2 class="titulo-valores-carrinho">Total a Pagar</h2>
+                    <p id="valor-Pagar" class="valor">R$ 150,00</p>
+                </div>
+
+                <button id="btn-continuar" class="btn-carrinho">Continuar Compra</button>
+                <button id="btn-finalizar" class="btn-carrinho">Finalizar Compra</button>
+            </div>
+        </section>
+
+        <footer id="rodape">
+            <div id="dadosloja">
+                <h2>Rua São Domingues,102 - Centro</h2>
+                <h1>Carmópolis-Sergipe</h1>
+            </div>
+
+            <div id="icones-sociais">
+                <ul>
+                    <li><a href="https://www.instagram.com/seu_usuario"><img src="imagem/instagram.jpg" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/seu_usuario"><img src="imagem/facebook.jpg" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div id="div-cartoes">
+                
+                <img src="../imagens/icones/master_card.png" alt="Mastercard">
+            </div>
+        </footer>
+
+    </main>
+
 
 </body>
-
 </html>
+        
