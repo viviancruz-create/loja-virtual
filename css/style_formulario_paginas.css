@@ -61,3 +61,12 @@ label{
 .oculto{
     display: none;
 }
+
+/* Correção de Compatibilidade para Login e Cadastro antigos */
+:root {
+    --cor_principal: var(--cor-texto);
+    --cor_lnk_menu: var(--cor-primaria);
+    --cor_botao01: var(--cor-suave);
+    --cor_suave: var(--cor-primaria);
+    --cor_botao_cor_vermelha: #ff3b5c;
+}

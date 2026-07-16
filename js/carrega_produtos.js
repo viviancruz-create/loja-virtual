@@ -115,13 +115,16 @@ const montandoCards = (objprodutos) => {
     const btnCard = document.createElement('button');
     btnCard.setAttribute('class', 'btn_card');
     btnCard.innerHTML = 'Adicionar';
+     
 
-    btnCard.addEventListener('click', () => {
-      //adicionando um objeto no carrinho
-      addItem(elem)
-      //Redireciona para Página carrinho.html
-      window.location.href = "/paginas/carrinho.html"
-    })
+
+      btnCard.addEventListener('click', () => {
+        // adicionando um objeto no carrinho
+        addItem(elem);
+        // Redireciona para Página carrinho.html usando caminho relativo
+        window.location.href = "paginas/carrinho.html";
+      });
+    
 
     divCard.appendChild(imgProduto);
     divCard.appendChild(h2Titulo);
