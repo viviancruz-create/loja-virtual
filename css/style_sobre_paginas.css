@@ -17,7 +17,7 @@
     box-shadow: 0 10px 30px rgba(255, 123, 147, 0.1);
 }
 
-.conteudo-historia h2 {
+.conteudo-historia h2, .conteudo-historia h4 {
     color: var(--cor-primaria);
     font-size: 2.2rem;
     text-align: center;

@@ -3,7 +3,7 @@ const produtosCandyShop = [
     {
       id_produto: 1,
       descricao_produto: "Bolo de Brigadeiro Gourmet Belga",
-      caminho_da_imagem: "../assets/images/bolos/brigadeiro-gourmet.jpg",
+      caminho_da_imagem: "../image/bolo-brigadeiro-belga.jpg",
       valor_unitario: 89.90,
       id_secao: 1,
       nome_secao: "Bolos Artesanais"
